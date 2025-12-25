@@ -82,3 +82,21 @@ function mentionScore() {
     </ul>
   );
 }
+
+const products = [
+  { id: 1, name: "Chou", isFruit: false },
+  { id: 2, name: "Pomme", isFruit: true },
+  { id: 3, name: "Banane", isFruit: true },
+];
+
+function listFruits(params) {
+  return (
+    <ul>
+      {products
+        .filter((produit) => produit.isFruit)
+        .map((fruit) => (
+          <li key={fruit.id}>{fruit.name}</li>
+        ))}
+    </ul>
+  );
+}

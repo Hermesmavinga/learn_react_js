@@ -32,8 +32,15 @@
 
 // console.log(state);
 
-const fruits = ["Pomme", "Banane", "Orange"];
+// const fruits = ["Pomme", "Banane", "Orange"];
 
-let fruitsResult = fruits.map((fruit, index) => {
-  return `${index}. ${fruit}`;
-});
+// let fruitsResult = fruits.map((fruit, index) => {
+//   return `${index}. ${fruit}`;
+// });
+
+function listeNames() {
+  const names = ["Hermès", "Alice", "Jean"];
+  let namesList = names.map((name, index) => {
+    return `<li i="${index}">${name}</li>`;
+  });
+}
