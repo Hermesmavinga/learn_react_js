@@ -100,3 +100,17 @@ function listFruits(params) {
     </ul>
   );
 }
+
+const produits = [];
+
+function name() {
+  return produits.length === 0 ? (
+    <p>Aucun produit disponible.</p>
+  ) : (
+    <ul>
+      {produits.map((produit) => (
+        <li key={produit.id}>{produit.name}</li>
+      ))}
+    </ul>
+  );
+}
