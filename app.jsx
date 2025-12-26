@@ -114,3 +114,20 @@ function name() {
     </ul>
   );
 }
+
+const users = [
+  { id: 1, name: "Hermès", online: true },
+  { id: 2, name: "Alice", online: false },
+];
+
+function userState() {
+  return (
+    <ul>
+      {users.map((user) => (
+        <li key={user.id}>
+          {user.name} est {user.online ? "en ligne" : "hors ligne"}
+        </li>
+      ))}
+    </ul>
+  );
+}
