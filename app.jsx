@@ -131,3 +131,12 @@ function userState() {
     </ul>
   );
 }
+
+function MyButton() {
+  function handleClick() {
+    alert("Bouton cliqué !");
+  }
+
+  return;
+  <button onClick={handleClick}>Cliquez-moi</button>;
+}
